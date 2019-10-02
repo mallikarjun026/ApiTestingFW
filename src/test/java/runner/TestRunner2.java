@@ -1,6 +1,6 @@
 package runner;
 
-
+//this creates both cucumber and extent  reports
 
 import java.io.File;
 
@@ -17,15 +17,17 @@ import managers.FileReaderManager;
 @CucumberOptions(
 		features = "Feature"
 		,glue={"com.stepDefinition"},tags= {"@tag2"},dryRun=false,
-		plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/MyProject_report.html"},
+				plugin = { "pretty", "html:target/cucumber-reports","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
 		 monochrome = true
 		)
 
-public class TestRunner {
+public class TestRunner2 {
 	
 	 @AfterClass
 	 public static void writeExtentReport() {
-	 Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
+		 File f= new File("config/extent-config.xml");
+		 Reporter.loadXMLConfig(f); 
+	 //Reporter.loadXMLConfig(new File(FileReaderManager.getInstance().getConfigReader().getReportConfigPath()));
 
 }
 }
