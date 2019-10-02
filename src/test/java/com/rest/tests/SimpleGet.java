@@ -1,17 +1,11 @@
 package com.rest.tests;
 
-import com.sun.corba.se.spi.ior.iiop.GIOPVersion;
+import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import javafx.beans.binding.When;
-import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
-import static org.hamcrest.Matchers.*;
-
-import org.testng.annotations.Test;
 
 
 public class SimpleGet {

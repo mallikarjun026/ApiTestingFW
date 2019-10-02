@@ -1,0 +1,6 @@
+Feature: twitter
+
+
+@tag2
+Scenario: read the first tweet
+	Given user read the first app

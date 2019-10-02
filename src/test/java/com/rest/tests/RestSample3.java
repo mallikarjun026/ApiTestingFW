@@ -2,11 +2,11 @@
 package com.rest.tests;
 
 import static io.restassured.RestAssured.given;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import static org.hamcrest.Matchers.equalTo;
 
 import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
 
 
 public class RestSample3 {

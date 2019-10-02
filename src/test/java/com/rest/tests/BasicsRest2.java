@@ -1,9 +1,9 @@
 package com.rest.tests;
 
+import static io.restassured.RestAssured.given;
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
-
-import static io.restassured.RestAssured.given;
 
 public class BasicsRest2 {
 	

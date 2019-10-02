@@ -2,13 +2,9 @@ package twitterApis;
 
 import static io.restassured.RestAssured.given;
 
-
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-
-
-import static org.hamcrest.Matchers.equalTo;
 
 public class ReadTwit {
 	
